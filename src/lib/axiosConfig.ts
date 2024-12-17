@@ -32,7 +32,7 @@ axiosInstance.interceptors.request.use(
   },
   (error) => {
     return Promise.reject(error);
-  }
+  },
 );
 
 axiosInstance.interceptors.response.use(
@@ -54,7 +54,7 @@ axiosInstance.interceptors.response.use(
         {},
         {
           withCredentials: true, // If you're using HTTP-only cookies
-        }
+        },
       );
 
       const { accessToken } = response.data;
@@ -74,5 +74,5 @@ axiosInstance.interceptors.response.use(
 
       window.location.href = "/auth/sign-in";
     }
-  }
+  },
 );

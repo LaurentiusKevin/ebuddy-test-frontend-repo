@@ -16,11 +16,11 @@ export default function CredentialsSignInPage() {
 
   const handleSignIn: (
     provider: AuthProvider,
-    formData: FormData
+    formData: FormData,
   ) => void = async (provider, formData) => {
     await login(
       formData.get("email") as string,
-      formData.get("password") as string
+      formData.get("password") as string,
     );
   };
 

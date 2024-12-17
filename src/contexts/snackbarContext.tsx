@@ -6,7 +6,7 @@ type SnackbarContextType = {
 };
 
 export const SnackbarContext = createContext<SnackbarContextType | undefined>(
-  undefined
+  undefined,
 );
 
 export function SnackbarProvider({ children }: { children: ReactNode }) {

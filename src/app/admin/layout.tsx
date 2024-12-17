@@ -1,22 +1,13 @@
 "use client";
 
-import * as React from "react";
-import { createTheme } from "@mui/material/styles";
 import DashboardIcon from "@mui/icons-material/Dashboard";
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-import BarChartIcon from "@mui/icons-material/BarChart";
-import DescriptionIcon from "@mui/icons-material/Description";
-import LayersIcon from "@mui/icons-material/Layers";
 import PeopleIcon from "@mui/icons-material/People";
-import {
-  AppProvider,
-  Router,
-  type Navigation,
-} from "@toolpad/core/AppProvider";
-import { DashboardLayout } from "@toolpad/core/DashboardLayout";
-import { useDemoRouter } from "@toolpad/core/internal";
-import { useRouter } from "next/navigation";
 import { Box } from "@mui/material";
+import { createTheme } from "@mui/material/styles";
+import { AppProvider, type Navigation } from "@toolpad/core/AppProvider";
+import { DashboardLayout } from "@toolpad/core/DashboardLayout";
+import { useRouter } from "next/navigation";
+import * as React from "react";
 
 const NAVIGATION: Navigation = [
   {
